@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <form>
+            <input type="text" placeholder="Search location" class="searchField">
+            <button type="submit" class="searchButton">Search</button>
+        </form>
+    </nav>
+
+    <div class="container">
+        <div class="weather">
+            <div class="weather1">
+                <p>18°C</p>
+                <span>12°C / 24°C </span>
+            </div>
+            
+            <div class="weather2">
+                <p>Kolkata, India</p>
+                <span>12:54 - Tuesday, 2022-12-27</span>
+            </div>
+            
+            <div class="weather3">
+                <img src="" alt="condition">
+                <span>Condition</span>
+            </div>
+        </div>
+
+        <div class="conditions">
+            <div class="left">
+                <p>Feels like - 21°C</p>
+                <p>Humidity - 81%</p>
+                <p>Pressure - 1016mb</p>
+                <p>Wind Speed - 12km/h</p>
+                <p>Sunrise - 06:00 AM</p>
+            </div>
+
+            <div class="right">
+                <p>UV Index - 6</p>
+                <p>Precipitation - 0mm</p>
+                <p>Visibility - 0.7km</p>
+                <p>Wind Direction - N</p>
+                <p>Sunset - 06:00 PM</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

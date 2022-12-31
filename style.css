@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("./bgImage.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0.7;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    padding: 1rem 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.48);
+    position: absolute;
+    top: 0;
+    background-color: rgba(180, 177, 177, 0.075);
+    border-radius: 0 0 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+nav form {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-content: flex-end;
+}
+
+.searchField {
+    width: 98%;
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    letter-spacing: 0.3rem;
+}
+
+.searchButton {
+    background-color: rgb(255, 234, 100);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.48);
+    border-radius: 0 25px 25px 0;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.473);
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: rgba(255, 234, 100, 0.702);
+}
+
+.weather {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+}
+
+.weather1, .weather2, .weather3 {
+    margin: 0.625rem;
+}
+
+.weather1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather1 p {
+    font-size: 4rem;
+}
+
+.weather1 span {
+    font-size: 1rem;
+}
+
+.weather2 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.weather2 p {
+    font-size: 2.2rem;
+}
+
+.weather2 span {
+    font-size: 1rem;
+}
+
+.weather3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem 0;
+}
+
+.weather3 img {
+    width: 6rem;
+}
+
+.conditions {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+    color: white;
+}
+
+.left, .right {
+    margin: 0 8rem;
+    font-size: 21px;
+}
+
+.left p, .right p {
+    padding: 1rem;
+    letter-spacing: 0.3rem;
+}
